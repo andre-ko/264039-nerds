@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [André Ko](https://up.htmlacademy.ru/htmlcss/15/user/264039).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://up.htmlacademy.ru/htmlcss/15/user/78239).
 
 ---
 
