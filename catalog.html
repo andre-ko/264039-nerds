@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Студия «Нёрдс»</title>
+  </head>
+  <body>
+
+<!-- Header | L'en-tête -->
+    <header class="header-main">
+    	<nav class="navigation-main container">
+				<img class="logo" src="http://placehold.it/139x56" width="139" height="56" alt="Студия «Нёрдс»">
+        <ul>
+        	<li>  
+          	<a href="#">Студия</a>
+          </li>
+          <li>
+          	<a href="#">Клиенты</a>
+          </li>
+					<li class="active">Магазин</li>
+          <li>
+          	<a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="block-cart">
+        	<a class="cart" href="#">Корзина</a>
+				</div>
+      </nav>
+    </header>
+    
+<!-- Main content block | Le bloc principal de la teneur -->
+		<!-- Left filter block | Le bloc gauche des filtres -->     
+    <article class="catalog container">
+    	<aside class="left">
+    		<form class="filters" action="#" type="post">
+					<p class="big">Стоимость:</p>
+					<div class="filter-range">
+          	<input type="range" id="price-range" name="price-range" min="0" max="15000" step="1000">
+          </div> <!-- the template of a range filter -->
+          <label for="price-from">От <input type="text" name="price-from" id="price-from" value="0"></label> 
+					<label for="price-to">До <input type="text" name="price-to" id="price-to" value="15000"></label>
+        	
+					<fieldset class="filter-layout">
+						<legend class="big">Сетка:</legend>
+						<label><input type="radio" name="layout" value="adaptive" checked> Aдаптивная</label>
+						<label><input type="radio" name="layout" value="fixed"> Фиксированная</label>
+						<label><input type="radio" name="layout" value="fluid"> Резиновая</label>
+					</fieldset>
+				
+					<fieldset class="filter-features">
+						<legend class="big">Особенности:</legend>
+						<label><input type="checkbox" name="features-slider" checked> Слайдер</label>
+						<label><input type="checkbox" name="features-advantages"> Блок преимуществ</label>
+						<label><input type="checkbox" name="features-news" checked> Новости</label>
+						<label><input type="checkbox" name="features-gallery"> Галерея</label>
+						<label><input type="checkbox" name="features-cart"> Корзина</label>
+					</fieldset>
+    		</form>
+    	</aside>
+
+<!-- Right block of catalog | Le bloc droit de catalogue --> 
+    	<section class="catalog container"> <!-- Center align -->
+    		<div class="filter-sort">
+    			<span class="filter-sort-by">
+    				Сортировать:
+    			</span>
+					<span class="active">По цене</span>
+    			<a href="#">По типу</a>
+    			<a href="#">По названию</a>
+    			<span class="toggle">
+    				<a class="toggle-decrease" href="#">По убыванию</a> 
+    				<a class="toggle-increase" href="#">По возрастанию</a>
+    			</span>
+    		</div>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Sedona»">
+    				<div class="catalog-item-hover">
+    					<h3>Sedona</h3>
+    					<p>Информационный сайт для туристов</p>
+    					<a class="btn btn-addtocart" href="#">9900 руб.</a>
+    				</div>
+    			</div>
+    		</article>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Pink»">
+    			</div>
+    		</article>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Барбершоп»">
+    			</div>
+    		</article>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Mishka»">
+    			</div>
+    		</article>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Курсы»">
+    			</div>
+    		</article>
+    		
+    		<article class="catalog-item"> 
+     			<div class="catalog-item-wrapper"><!-- this one is imitating browser elements on the image, probably, could be replaced with pseudo-class ::before for .catalog-item-wrapper -->
+    				<img class="catalog-photo" src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон «Кваст»">
+    			</div>
+    		</article>
+    	</section>
+    	
+    	<section class="navigation-page">
+    		<span class="active">1</span>
+    		<a href="#">2</a>
+    		<a href="#">3</a>
+    		<a class="btn page-next" href="#">Следующая</a>
+    	</section>
+    </article>
+    
+<!-- Footer | Le bas de la page --> 
+    <footer class="footer-main">
+			<section class="contacts-map">
+				<div class="container"> <!-- here will be iframe with a map -->
+					<article class="contacts"> <!--  the tab with contacts  -->
+						<h1>NЁRDS DESIGN STUDIO</h1>
+						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a class="btn btn-contact" href="#">Напишите нам</a>
+					</article>
+				</div>
+			</section>
+			
+			<div class="container">
+				<section class="footer-social">
+					<a class="btn-social btn-vk" href="#">Вконтакте</a>
+					<a class="btn-social btn-fb" href="#">Фэйсбук</a>
+					<a class="btn-social btn-tw" href="#">Твиттер</a>
+				</section>
+				<section class="footer-become-frends">
+					<p class="big">Давайте дружить, это выгодно!</p>
+					<p>Cкидка 10% для друзей из социальных сетей.</p>
+				</section>
+			</div>
+    </footer>
+  </body>
+</html>
