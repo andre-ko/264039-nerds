@@ -3,137 +3,144 @@
   <head>
     <meta charset="utf-8">
     <title>Студия «Нёрдс»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
 <!-- Header | L'en-tête -->
     <header class="header-main">
-    	<nav class="navigation-main container">
-				<img class="logo" src="http://placehold.it/139x56" width="139" height="56" alt="Студия «Нёрдс»">
+      <nav class="navigation-main container">
+        <img class="logo" src="img/logo-nerds.png" width="160" height="65" alt="Студия «Нёрдс»">
         <ul>
-        	<li>  
-          	<a href="#">Студия</a>
+          <li>
+            <a href="#">Студия</a>
           </li>
           <li>
-          	<a href="#">Клиенты</a>
-          </li>
-					<li>
-          	<a href="#">Магазин</a>
+            <a href="#">Клиенты</a>
           </li>
           <li>
-          	<a href="#">Контакты</a>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
           </li>
         </ul>
         <div class="block-cart">
-        	<a class="cart" href="#">Корзина</a>
-				</div>
+          <a class="cart" href="#">Корзина</a>
+        </div>
       </nav>
-      
-<!-- Le slider -->      
+
+<!-- Le slider -->
       <section class="block-slider container">
-      	<div class="slide">
-      		<h2>Долго, дорого, скрупулезно.</h2>
-      		<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-      		<a class="btn btn-more" href="#">Узнать больше</a>
-      	</div>
-      	<div class="slide">
-      		<h2>Заголовок слайда 2</h2>
-      		<p>Слайд 2</p>
-      		<a class="btn btn-more" href="#">Узнать больше</a>
-      	</div>
-      	<div class="slide">
-      		<h2>Заголовок слайда 3</h2>
-      		<p>Слайд 3.</p>
-      		<a class="btn btn-more" href="#">Узнать больше</a>
-      	</div>	
+        <div class="slide">
+          <h1>Долго, дорого, скрупулезно.</h1>
+          <p>Математически выверенный дизайн</p>
+          <p>для вашего сайта или мобильного приложения</p>
+          <a class="btn btn-more" href="#">Узнать больше</a>
+        </div>
+        <div class="slide">
+        <h1>Любим математику как никто другой</h1>
+        <p>Никакого креатива, только математические формулы</p>
+        <p>для расчета идеальных пропорций.</p>
+          <a class="btn btn-more" href="#">Узнать больше</a>
+        </div>
+        <div class="slide">
+        <h1>Только ночь, только хардкор</h1>
+        <p>Работать днем, как все? Мы против этого.</p>
+        <p>Ближе к полуночи работа только начинается.</p>
+          <a class="btn btn-more" href="#">Узнать больше</a>
+        </div>
+        <input type="radio" name="slider" id="toggle-1" checked>
+        <input type="radio" name="slider" id="toggle-2">
+        <input type="radio" name="slider" id="toggle-3">
+        <div class="slides-controls"> <!-- Управление слайдами -->
+          <label class="toggle-1" for="toggle-1"></label>
+          <label class="toggle-2" for="toggle-2"></label>
+          <label class="toggle-3" for="toggle-3"></label>
+      </div>
       </section>
     </header>
-    
-<!-- Main content block | Le bloc principal de la teneur -->  
-    <article class="advantages">
-    	<section class="advantages-item">
-    		<img src="http://placehold.it/240x124" width="240" height="124" alt="«Нёрдс» веб-сайты">
-    		<h3>Веб-сайты</h3>
-    		<p>Мир никогда не будет прежним после того как увидит Ваш сайт!</p>
-    		<a class="btn btn-order" href="#">Заказать</a>
-    	</section>
-    	<section class="advantages-item">
-    		<img src="http://placehold.it/240x124" width="240" height="124" alt="«Нёрдс» приложения">
-    		<h3>Приложения</h3>
-    		<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-    		<a class="btn btn-order" href="#">Заказать</a>
-    	</section>
-    	<section class="advantages-item">
-    		<img src="http://placehold.it/240x124" width="240" height="124" alt="«Нёрдс» презентации">
-    		<h3>Презентации</h3>
-    		<p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-    		<a class="btn btn-order" href="#">Заказать</a>
-    	</section>
+
+<!-- Main content block | Le bloc principal de la teneur -->
+    <section class="advantages container">
+      <div class="advantages-item"> <!-- Изображения - декоративные, будут бэкграундом этого класса -->
+        <h2>Веб-сайты</h2>
+        <p>Мир никогда не будет&nbsp;прежним после того как увидит Ваш сайт!</p>
+        <a class="btn btn-order" href="#">Заказать</a>
+      </div>
+      <div class="advantages-item">
+        <h2>Приложения</h2>
+        <p>Покорите топ-10 приложений&nbsp;в AppStore и Google Play</p>
+        <a class="btn btn-order" href="#">Заказать</a>
+      </div>
+      <div class="advantages-item">
+        <h2>Презентации</h2>
+        <p>Вы даже не&nbsp;подозреваете, насколько Вы изумительны!</p>
+        <a class="btn btn-order" href="#">Заказать</a>
+      </div>
+    </section>
+
+    <article class="about-us container">
+      <section class="about-left">
+        <h4>Мы — маленькая, но&nbsp;гордая дизайн-студия из Краснодара.</h4>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический&nbsp;расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="about-title">Выполняем заказы на разработку:</p>
+        <ul class="about-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+
+      <section class="about-right"> <!-- изображение декоративное, будет бэкграундом этого класса -->
+        <p class="about-title">c 2004 года любим точность во всём:</p>
+        <dl>
+          <dt>146%</dt>
+          <dd>Уровень самоотдачи</dd>
+          <dt>100%</dt>
+          <dd>Соблюдение сроков</dd>
+          <dt>50%</dt>
+          <dd>Минимальная предоплата</dd>
+        </dl>
+      </section>
+
+      <section class="our-clients">
+          <img src="img/clients-htmlacademy.png" width="209" height="90" alt="HTML Academy">
+          <img src="img/clients-barbershop.png" width="209" height="90" alt="Барбершоп Бородинский">
+          <img src="img/clients-pink.png" width="209" height="90" alt="Pink">
+          <img src="img/clients-mishka.png" width="209" height="90" alt="Mishka">
+      </section>
     </article>
-    
-    <article class="about-us">
-    	<section class="about-left">
-    		<h1>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h1>
-    		<p>Исповедуем принципы минимализма и чистоты. Ставим математический<br>расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-    		<p class="about-title">Выполняем заказы на разработку:</p>
-    		<ul class="about-list">
-    			<li>Веб-сайтов любой сложности</li>
-    			<li>Мобильных приложений для iOS и Android</li>
-    			<li>Слайдшоу и видео для корпоративных презентаций</li>
-    		</ul>
-    	</section>
-    	
-    	<section class="about-right">
-    		<img class="about-logo" src="http://placehold.it/360x208" width="360" height="208" alt="Мы — «Нёрдс»">
-    		<p class="about-title">c 2004 года любим точность во всём:</p>
-    		<div class="about-table">
-    			<div class="about-row">
-    				<div class="about-cell">146%</div>
-    				<div class="about-cell">100%</div>
-						<div class="about-cell">50%</div>
-    			</div>
-    			<div class="about-row small">
-    				<div class="about-cell">Уровень самоотдачи</div>
-    				<div class="about-cell">Соблюдение сроков</div>
-    				<div class="about-cell">Минимальная предоплата</div>
-    			</div>
-				</div>
-    	</section>
-    	
-    	<section class="our-clients">
-    		<div class="our-clients-item">
-    			<img src="http://placehold.it/280x180" width="280" height="180" alt="HTML Academy">
-    			<img src="http://placehold.it/280x180" width="280" height="180" alt="Барбершоп Бородинский">
-    			<img src="http://placehold.it/280x180" width="280" height="180" alt="Pink">
-    			<img src="http://placehold.it/280x180" width="280" height="180" alt="Mishka">    
-    		</div>
-    	</section>
-    </article>
-    
-<!-- Footer | Le bas de la page --> 
+
+<!-- Footer | Le bas de la page -->
     <footer class="footer-main">
-			<section class="contacts-map">
-				<div class="container"> <!-- here will be iframe with a map -->
-					<article class="contacts"> <!--  the tab with contacts  -->
-						<h1>NЁRDS DESIGN STUDIO</h1>
-						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-						<p>тел. +7 (812) 275-75-75</p>
-						<a class="btn btn-contact" href="#">Напишите нам</a>
-					</article>
-				</div>
-			</section>
-			
-			<div class="container">
-				<section class="footer-social">
-					<a class="btn-social btn-vk" href="#">Вконтакте</a>
-					<a class="btn-social btn-fb" href="#">Фэйсбук</a>
-					<a class="btn-social btn-tw" href="#">Твиттер</a>
-				</section>
-				<section class="footer-become-frends">
-					<p class="big">Давайте дружить, это выгодно!</p>
-					<p>Cкидка 10% для друзей из социальных сетей.</p>
-				</section>
-			</div>
+      <section class="contacts-map">
+        <div class="container"> <!-- here will be iframe with a map -->
+          <article class="contacts"> <!--  the tab with contacts  -->
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д.19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="btn btn-contact" href="#">Напишите нам</a>
+          </article>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="footer-social">
+          <a class="btn-social btn-vk" href="#">Вконтакте</a>
+          <a class="btn-social btn-fb" href="#">Фэйсбук</a>
+          <a class="btn-social btn-tw" href="#">Твиттер</a>
+        </section>
+        <section class="footer-become-frends">
+          <p class="big">Давайте дружить, это выгодно!</p>
+          <p>Cкидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
