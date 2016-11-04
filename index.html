@@ -3,69 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title>Студия «Нёрдс»</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
 <!-- Header | L'en-tête -->
     <header class="header-main">
-      <nav class="navigation-main container">
-        <img class="logo" src="img/logo-nerds.png" width="160" height="65" alt="Студия «Нёрдс»">
-        <ul>
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div class="block-cart">
-          <a class="cart" href="#">Корзина</a>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="navigation-main">
+          <img class="logo-index" src="img/logo-nerds.png" width="160" height="64" alt="Студия «Нёрдс»">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="block-cart">
+            <a class="cart" href="#">Корзина</a>
+          </div>
+        </nav>
 
 <!-- Le slider -->
-      <section class="block-slider container">
-        <div class="slide">
-          <h1>Долго, дорого, скрупулезно.</h1>
-          <p>Математически выверенный дизайн</p>
-          <p>для вашего сайта или мобильного приложения</p>
-          <a class="btn btn-more" href="#">Узнать больше</a>
-        </div>
-        <div class="slide">
-        <h1>Любим математику как никто другой</h1>
-        <p>Никакого креатива, только математические формулы</p>
-        <p>для расчета идеальных пропорций.</p>
-          <a class="btn btn-more" href="#">Узнать больше</a>
-        </div>
-        <div class="slide">
-        <h1>Только ночь, только хардкор</h1>
-        <p>Работать днем, как все? Мы против этого.</p>
-        <p>Ближе к полуночи работа только начинается.</p>
-          <a class="btn btn-more" href="#">Узнать больше</a>
-        </div>
-        <input type="radio" name="slider" id="toggle-1" checked>
-        <input type="radio" name="slider" id="toggle-2">
-        <input type="radio" name="slider" id="toggle-3">
-        <div class="slides-controls"> <!-- Управление слайдами -->
-          <label class="toggle-1" for="toggle-1"></label>
-          <label class="toggle-2" for="toggle-2"></label>
-          <label class="toggle-3" for="toggle-3"></label>
+        <section class="block-slider clearfix">
+          <div class="slide slide-1">
+            <h1>Долго, дорого, скрупулезно.</h1>
+            <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
+            <a class="btn btn-more" href="#">Узнать больше</a>
+          </div>
+      <!--<div class="slide">
+          <h1>Любим математику как&nbsp;никто другой</h1>
+          <p>Никакого креатива, только математические формулы
+          <p>для&nbsp;расчета&nbsp;идеальных пропорций.</p>
+            <a class="btn btn-more" href="#">Узнать больше</a>
+          </div>
+          <div class="slide">
+          <h1>Только ночь, только&nbsp;хардкор</h1>
+          <p>Работать днем, как все? Мы&nbsp;против этого.</p>
+          <p>Ближе к полуночи работа только начинается.</p>
+            <a class="btn btn-more" href="#">Узнать больше</a>
+          </div>-->
+         <!-- <input type="radio" name="slider" id="toggle-1" checked>
+          <input type="radio" name="slider" id="toggle-2">
+          <input type="radio" name="slider" id="toggle-3">
+          <div class="slides-controls">
+            <label class="toggle-1" for="toggle-1"></label>
+            <label class="toggle-2" for="toggle-2"></label>
+            <label class="toggle-3" for="toggle-3"></label>
+        </div>-->
+        </section>
       </div>
-      </section>
     </header>
 
 <!-- Main content block | Le bloc principal de la teneur -->
     <section class="advantages container">
       <div class="advantages-item"> <!-- Изображения - декоративные, будут бэкграундом этого класса -->
         <h2>Веб-сайты</h2>
-        <p>Мир никогда не будет&nbsp;прежним после того как увидит Ваш сайт!</p>
+        <p>Мир никогда не будет прежним после&nbsp;того как увидит Ваш сайт!</p>
         <a class="btn btn-order" href="#">Заказать</a>
       </div>
       <div class="advantages-item">
@@ -75,14 +77,14 @@
       </div>
       <div class="advantages-item">
         <h2>Презентации</h2>
-        <p>Вы даже не&nbsp;подозреваете, насколько Вы изумительны!</p>
+        <p>Вы даже не&nbsp;подозреваете, насколько&nbsp;Вы изумительны!</p>
         <a class="btn btn-order" href="#">Заказать</a>
       </div>
     </section>
 
-    <article class="about-us container">
+    <article class="about-us container clearfix">
       <section class="about-left">
-        <h4>Мы — маленькая, но&nbsp;гордая дизайн-студия из Краснодара.</h4>
+        <h4>Мы — маленькая, но&nbsp;гордая дизайн-студия&nbsp;из&nbsp;Краснодара.</h4>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический&nbsp;расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="about-title">Выполняем заказы на разработку:</p>
         <ul class="about-list">
@@ -95,46 +97,49 @@
       <section class="about-right"> <!-- изображение декоративное, будет бэкграундом этого класса -->
         <p class="about-title">c 2004 года любим точность во всём:</p>
         <dl>
-          <dt>146%</dt>
-          <dd>Уровень самоотдачи</dd>
-          <dt>100%</dt>
-          <dd>Соблюдение сроков</dd>
-          <dt>50%</dt>
-          <dd>Минимальная предоплата</dd>
+          <div>
+            <dt>146<sup>%</sup></dt>
+            <dt>100<sup>%</sup></dt>
+            <dt>50<sup>%</sup></dt>
+          </div>
+          <div>
+            <dd>Уровень самоотдачи</dd>
+            <dd>Соблюдение сроков</dd>
+            <dd>Минимальная предоплата</dd>
+          </div>
         </dl>
       </section>
-
-      <section class="our-clients">
-          <img src="img/clients-htmlacademy.png" width="209" height="90" alt="HTML Academy">
-          <img src="img/clients-barbershop.png" width="209" height="90" alt="Барбершоп Бородинский">
-          <img src="img/clients-pink.png" width="209" height="90" alt="Pink">
-          <img src="img/clients-mishka.png" width="209" height="90" alt="Mishka">
-      </section>
     </article>
+      <section class="our-clients container">
+        <img src="img/clients-htmlacademy.png" width="209" height="90" alt="HTML Academy">
+        <img src="img/clients-barbershop.png" width="209" height="90" alt="Барбершоп Бородинский">
+        <img src="img/clients-pink.png" width="209" height="90" alt="Pink">
+        <img src="img/clients-mishka.png" width="209" height="90" alt="Mishka">
+      </section>
+
+  <div class="container clearfix">
+    <article id="contact-tab">
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д.19/8
+      </p>
+      <p class="phone">
+        тел. +7 (812) 275-75-75
+      </p>
+      <a class="btn btn-contact" href="#">Напишите нам</a>
+      </article>
+    </div>
+    <div id="map">
+    </div>
 
 <!-- Footer | Le bas de la page -->
     <footer class="footer-main">
-      <section class="contacts-map">
-        <div class="container"> <!-- here will be iframe with a map -->
-          <article class="contacts"> <!--  the tab with contacts  -->
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д.19/8
-            </p>
-            <p>
-              тел. +7 (812) 275-75-75
-            </p>
-            <a class="btn btn-contact" href="#">Напишите нам</a>
-          </article>
-        </div>
-      </section>
-
       <div class="container">
         <section class="footer-social">
           <a class="btn-social btn-vk" href="#">Вконтакте</a>
           <a class="btn-social btn-fb" href="#">Фэйсбук</a>
-          <a class="btn-social btn-tw" href="#">Твиттер</a>
+          <a class="btn-social btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-become-frends">
           <p class="big">Давайте дружить, это выгодно!</p>
@@ -142,5 +147,25 @@
         </section>
       </div>
     </footer>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 59.938976, lng: 30.323422},
+          zoom: 17,
+          disableDefaultUI: true,
+          scrollwheel:  false,
+          zoomControl: true
+        });
+        var image = 'img/map-marker.png';
+        var studioMarker = new google.maps.Marker({
+          position: {lat: 59.938645, lng: 30.323087},
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP-LdTgjqwqP5aauCZMVSgdZWfIWUosBw&callback=initMap"
+        async defer></script>
   </body>
 </html>

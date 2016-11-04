@@ -3,41 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Студия «Нёрдс»</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
 <!-- Header | L'en-tête -->
     <header class="header-main">
-      <nav class="navigation-main container">
-        <a href="index.html"><img class="logo" src="img/logo-nerds.png" width="160" height="65" alt="Студия «Нёрдс»"></a>
-        <ul>
-          <li>  
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li class="active">
-            Магазин
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div class="block-cart">
-          <a class="cart" href="#">Корзина</a>
-        </div>
-      </nav>
-      <h1>Магазин готовых шаблонов</h1>
-    </header> 
-    
+     <div class="container clearfix">
+        <nav class="navigation-main">
+          <a class="logo" href="index.html"><img src="img/logo-nerds.png" width="160" height="65" alt="Студия «Нёрдс»"></a>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a class="active">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="block-cart">
+            <a class="cart"   href="#">Корзина</a>
+          </div>
+        </nav>
+        <h1 class="inner-header">Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+
 <!-- Main content block | Le bloc principal de la teneur -->
-		<!-- Left filter block | Le bloc gauche des filtres -->     
-    <section class="catalog container">
+		<!-- Left filter block | Le bloc gauche des filtres -->
+    <section class="catalog-main container">
       <aside class="catalog-filter">
         <form class="filters" action="#" method="post">
-
           <h3>Стоимость:</h3>
           <div class="range-controls"> <!-- фильтр с ползунком -->
             <div class="scale"></div>
@@ -49,16 +51,16 @@
             <label for="price-from">От</label>
             <input type="text" name="price-from" id="price-from" value="0">
             <label for="price-to">До</label>
-            <input type="text" name="price-to" id="price-to" value="15000">
+            <input type="text" name="price-to" id="price-to" value="15 000">
           </div>
-        	
+
           <h3>Сетка:</h3>
           <fieldset class="filter-layout">
             <label><input type="radio" name="layout" value="adaptive" checked> Aдаптивная</label>
             <label><input type="radio" name="layout" value="fixed"> Фиксированная</label>
             <label><input type="radio" name="layout" value="fluid"> Резиновая</label>
           </fieldset>
-				
+
           <h3>Особенности:</h3>
           <fieldset class="filter-features">
             <label><input type="checkbox" name="features-slider" checked> Слайдер</label>
@@ -67,26 +69,24 @@
             <label><input type="checkbox" name="features-gallery"> Галерея</label>
             <label><input type="checkbox" name="features-cart"> Корзина</label>
           </fieldset>
+          <button class="btn btn-show" type="button" method="post">Показать</button>
         </form>
       </aside>
 
-<!-- Right block of catalog | Le bloc droit de catalogue --> 
-      <section class="catalog container"> <!-- блок каталога + центровщик -->
-        <div class="filter-sort"> <!--  -->
-          <span class="filter-sort-by">
-            Сортировать:
-          </span>
-          <span class="active">По цене</span>
-          <a href="#">По типу</a>
-          <a href="#">По названию</a>
-          <span class="toggle">
-            <a class="toggle-decrease active" href="#">По убыванию</a> 
-            <a class="toggle-increase" href="#">По возрастанию</a>
-          </span>
+<!-- Right block of catalog | Le bloc droit de catalogue -->
+      <section class="catalog-content">
+        <div class="filter-sort clearfix">
+          <div class="filter-sort-by">Сортировать:</div>
+          <div class="filter-set"><span class="active">По цене</span>
+          <a class="filter-sort-link" href="#">По типу</a>
+          <a class="filter-sort-link" href="#">По названию</a>
+          <a href="#" title="По убыванию"><div class="toggle-decrease">По убыванию</div></a>
+          <a href="#" title="По возрастанию"><div class="toggle-increase">По возрастанию</div></a>
+          </div>
         </div>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-sedona.jpg" width="360" height="576" alt="Шаблон «Sedona»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-sedona.jpg" width="358" height="576" alt="Шаблон «Sedona»">
           <div class="catalog-item-details"> <!-- плашка с информацией о продукте, всплывает при наведении -->
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
@@ -94,8 +94,8 @@
           </div>
         </article>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-pink.jpg" width="360" height="576" alt="Шаблон «PINK APP»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-pink.jpg" width="358" height="576" alt="Шаблон «PINK APP»">
             <div class="catalog-item-details">
             <h3>PINK APP</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -103,8 +103,8 @@
           </div>
         </article>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-barbershop.jpg" width="360" height="576" alt="Шаблон «BARBERSHOP»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-barbershop.jpg" width="358" height="576" alt="Шаблон «BARBERSHOP»">
             <div class="catalog-item-details">
             <h3>BARBERSHOP</h3>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -112,8 +112,8 @@
           </div>
         </article>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-mishka.jpg" width="360" height="576" alt="Шаблон «MISHKA»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-mishka.jpg" width="358" height="576" alt="Шаблон «MISHKA»">
             <div class="catalog-item-details">
             <h3>MISHKA</h3>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -121,8 +121,8 @@
           </div>
         </article>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-aplus.jpg" width="360" height="576" alt="Шаблон «A PLUS»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-aplus.jpg" width="358" height="576" alt="Шаблон «A PLUS»">
             <div class="catalog-item-details">
             <h3>A PLUS</h3>
             <p>Лендинг курсов повышения квалификации</p>
@@ -130,47 +130,47 @@
           </div>
         </article>
 
-        <article class="catalog-item"> 
-          <img class="catalog-photo" src="img/item-kvast.jpg" width="360" height="576" alt="Шаблон «КВАСТ»">
+        <article class="catalog-item">
+          <img class="catalog-photo" src="img/item-kvast.jpg" width="358" height="576" alt="Шаблон «КВАСТ»">
             <div class="catalog-item-details">
             <h3>КВАСТ</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="btn btn-addtocart" href="#">9900 руб.</a>
           </div>
         </article>
-    	
+
       <section class="navigation-page">
-        <span class="active">1</span>
+        <span class="active-page">1</span>
         <a href="#">2</a>
         <a href="#">3</a>
         <a class="btn page-next" href="#">Следующая</a>
       </section>
-    </section> 
-	</section> 
-    
-<!-- Footer | Le bas de la page --> 
-    <footer class="footer-main">
-      <section class="contacts-map">
-        <div class="container"> <!-- here will be iframe with a map -->
-          <article class="contacts"> <!--  the tab with contacts  -->
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д.19/8
-            </p>
-            <p>
-              тел. +7 (812) 275-75-75
-            </p>
-            <a class="btn btn-contact" href="#">Напишите нам</a>
-          </article>
-        </div>
-      </section>
+    </section>
+	</section>
 
+  <div class="container clearfix">
+    <article id="contact-tab">
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д.19/8
+      </p>
+      <p class="phone">
+        тел. +7 (812) 275-75-75
+      </p>
+      <a class="btn btn-contact" href="#">Напишите нам</a>
+      </article>
+    </div>
+    <div id="map">
+    </div>
+
+<!-- Footer | Le bas de la page -->
+    <footer class="footer-main">
       <div class="container">
         <section class="footer-social">
           <a class="btn-social btn-vk" href="#">Вконтакте</a>
           <a class="btn-social btn-fb" href="#">Фэйсбук</a>
-          <a class="btn-social btn-tw" href="#">Твиттер</a>
+          <a class="btn-social btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-become-frends">
           <p class="big">Давайте дружить, это выгодно!</p>
@@ -178,5 +178,25 @@
         </section>
       </div>
     </footer>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 59.938976, lng: 30.323422},
+          zoom: 17,
+          disableDefaultUI: true,
+          scrollwheel:  false,
+          zoomControl: true
+        });
+        var image = 'img/map-marker.png';
+        var studioMarker = new google.maps.Marker({
+          position: {lat: 59.938645, lng: 30.323087},
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP-LdTgjqwqP5aauCZMVSgdZWfIWUosBw&callback=initMap"
+        async defer></script>
   </body>
 </html>
