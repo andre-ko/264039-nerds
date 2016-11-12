@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Студия «Нёрдс»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,7 +11,7 @@
 
 <!-- Header | L'en-tête -->
     <header class="header-main">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="navigation-main">
           <img class="logo-index" src="img/logo-nerds.png" width="160" height="64" alt="Студия «Нёрдс»">
           <ul>
@@ -34,38 +35,40 @@
 
 <!-- Le slider -->
         <section class="block-slider clearfix">
-          <div class="slide slide-1">
-            <h1>Долго, дорого, скрупулезно.</h1>
-            <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
-            <a class="btn btn-more" href="#">Узнать больше</a>
-          </div>
-      <!--<div class="slide">
-          <h1>Любим математику как&nbsp;никто другой</h1>
-          <p>Никакого креатива, только математические формулы
-          <p>для&nbsp;расчета&nbsp;идеальных пропорций.</p>
-            <a class="btn btn-more" href="#">Узнать больше</a>
-          </div>
-          <div class="slide">
-          <h1>Только ночь, только&nbsp;хардкор</h1>
-          <p>Работать днем, как все? Мы&nbsp;против этого.</p>
-          <p>Ближе к полуночи работа только начинается.</p>
-            <a class="btn btn-more" href="#">Узнать больше</a>
-          </div>-->
-         <!-- <input type="radio" name="slider" id="toggle-1" checked>
+          <input type="radio" name="slider" id="toggle-1" checked>
           <input type="radio" name="slider" id="toggle-2">
           <input type="radio" name="slider" id="toggle-3">
           <div class="slides-controls">
-            <label class="toggle-1" for="toggle-1"></label>
-            <label class="toggle-2" for="toggle-2"></label>
-            <label class="toggle-3" for="toggle-3"></label>
-        </div>-->
+            <label for="toggle-1"></label>
+            <label for="toggle-2"></label>
+            <label for="toggle-3"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slide">
+            <div class="slide-1">
+              <h1>Долго, дорого, скрупулезно.</h1>
+              <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта&nbsp;или мобильного приложения.</p>
+              <a class="btn btn-more" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-2">
+              <h1>Любим математику как&nbsp;никто другой</h1>
+              <p>Никакого креатива, только математические&nbsp;формулы для&nbsp;расчета&nbsp;идеальных пропорций.</p>
+              <a class="btn btn-more" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-3">
+              <h1>Только ночь, только&nbsp;хардкор</h1>
+              <p>Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
+              <a class="btn btn-more" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
         </section>
       </div>
     </header>
 
 <!-- Main content block | Le bloc principal de la teneur -->
     <section class="advantages container">
-      <div class="advantages-item"> <!-- Изображения - декоративные, будут бэкграундом этого класса -->
+      <div class="advantages-item">
         <h2>Веб-сайты</h2>
         <p>Мир никогда не будет прежним после&nbsp;того как увидит Ваш сайт!</p>
         <a class="btn btn-order" href="#">Заказать</a>
@@ -85,7 +88,7 @@
     <article class="about-us container clearfix">
       <section class="about-left">
         <h4>Мы — маленькая, но&nbsp;гордая дизайн-студия&nbsp;из&nbsp;Краснодара.</h4>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический&nbsp;расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический&nbsp;расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="about-title">Выполняем заказы на разработку:</p>
         <ul class="about-list">
           <li>Веб-сайтов любой сложности</li>
@@ -94,7 +97,7 @@
         </ul>
       </section>
 
-      <section class="about-right"> <!-- изображение декоративное, будет бэкграундом этого класса -->
+      <section class="about-right">
         <p class="about-title">c 2004 года любим точность во всём:</p>
         <dl>
           <div>
@@ -110,15 +113,15 @@
         </dl>
       </section>
     </article>
-      <section class="our-clients container">
-        <img src="img/clients-htmlacademy.png" width="209" height="90" alt="HTML Academy">
-        <img src="img/clients-barbershop.png" width="209" height="90" alt="Барбершоп Бородинский">
-        <img src="img/clients-pink.png" width="209" height="90" alt="Pink">
-        <img src="img/clients-mishka.png" width="209" height="90" alt="Mishka">
+      <section class="our-clients container" id="our-clients">
+        <a href="#our-clients"><img src="img/clients-htmlacademy.png" width="209" height="90" alt="HTML Academy"></a>
+        <a href="#our-clients"><img src="img/clients-barbershop.png" width="209" height="90" alt="Барбершоп Бородинский"></a>
+        <a href="#our-clients"><img src="img/clients-pink.png" width="209" height="90" alt="Pink"></a>
+        <a href="#our-clients"><img src="img/clients-mishka.png" width="209" height="90" alt="Mishka"></a>
       </section>
 
   <div class="container clearfix">
-    <article id="contact-tab">
+    <article class="contact-tab">
       <h3>NЁRDS DESIGN STUDIO</h3>
       <p>
         191186, Санкт-Петербург,<br>
@@ -130,11 +133,11 @@
       <a class="btn btn-contact" href="#">Напишите нам</a>
       </article>
     </div>
-    <div id="map">
-    </div>
 
 <!-- Footer | Le bas de la page -->
     <footer class="footer-main">
+    <div class="footer-map" id="map">
+    </div>
       <div class="container">
         <section class="footer-social">
           <a class="btn-social btn-vk" href="#">Вконтакте</a>
