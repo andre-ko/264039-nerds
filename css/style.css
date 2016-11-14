@@ -5,7 +5,9 @@ html {
   padding: 0;
 }
 
-body {
+body,
+.modal-form input,
+.modal-form textarea {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -354,13 +356,15 @@ a.logo {
 .btn-more:hover,
 .btn-order:hover,
 .btn-contact:hover,
-.btn-addtocart:hover {
+.btn-addtocart:hover,
+.btn-send:hover {
   background-color: #e74246;
 }
 
 .btn-more:active,
 .btn-order:active,
-.btn-contact:active {
+.btn-contact:active,
+.btn-send:active {
   background-color: #d7373b;
   color: #e38384;
   box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
@@ -375,6 +379,7 @@ a.logo {
 .btn-addtocart {
   margin-top: 20px;
   margin-bottom: 44px;
+
   width: 123px;
 }
 .btn-more {
@@ -524,7 +529,8 @@ ul.about-list {
   width: 100%;
   height: 416px;
   z-index: 1;
-  margin-bottom: 74px;
+  margin-bottom: 68px;
+  background: url("../img/map-static.jpg") no-repeat 50% 50%;
 }
 
 .contact-tab {
@@ -610,13 +616,14 @@ h1.inner-header {
 
 .footer-social {
   float: left;
-  margin-right: 103px;
+  margin-right: 99px;
   min-width: 300px;
   height: 80px;
 }
 
 .footer-become-frends {
   float: left;
+  margin-top: 7px;
 }
 
 .footer-main {
@@ -666,6 +673,7 @@ h1.inner-header {
 .filter-features label {
   padding-left: 35px;
   position: relative;
+  display: block;
   color: #283136;
   margin-bottom: 16px;
   margin-left: 1px;
@@ -676,16 +684,6 @@ h1.inner-header {
 .filter-features label:hover,
 .filter-layout label:hover {
   color: #000000;
-}
-
-.filter-layout label {
-  padding-left: 35px;
-  position: relative;
-  color: #283136;
-  margin-bottom: 19px;
-  margin-left: 1px;
-  width: 60%;
-  cursor: pointer;
 }
 
 .filter-layout input[type="radio"],
@@ -757,14 +755,11 @@ h1.inner-header {
   cursor: default;
 } 
 
-label {
-  display: block;
-}
-
 .filter-layout label {
   padding-left: 35px;
   position: relative;
   color: #283136;
+  display: block;
   margin-bottom: 16px;
   margin-left: 1px;
   width: 60%;
@@ -817,6 +812,7 @@ label {
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   text-align: center;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -1056,7 +1052,7 @@ input:focus {
   height: 15px;
   background-image: url("../img/nerds-iconset.png");
   background-repeat: no-repeat;
-  background-position: -66px -67px;
+  background-position: -1px -15px;
 }
 
 .btn-social {
@@ -1066,16 +1062,12 @@ input:focus {
   font-size: 0;
   border-radius: 50%;
   background-color: #e1e1e1;
-  margin-left: 6px;
   margin-right: 6px;
   background-image: url("../img/nerds-iconset.png");
   background-repeat: no-repeat;
   vertical-align: top;
 }
 
-.btn-social:first-child {
-  margin-left: 0;
-}
 
 .btn-social:hover {
   background-color: #e74246;
@@ -1083,21 +1075,32 @@ input:focus {
 
 .btn-social:active {
   background-color: #d7373b;
-  background-image: url("../img/nerds-iconset-hover.png");
+  background-image: url("../img/nerds-iconset.png");
 }
 
 .btn-vk {
- background-position: -185px -184px;
+ background-position: 26px -37px;
 }
 
 .btn-fb {
- background-position: -185px -34px;
+ background-position: 34px -101px;
 }
 
 .btn-inst {
- background-position: -31px -185px;
+ background-position: 31px -182px;
 }
 
+.btn-vk:active {
+ background-position: 26px -251px;
+}
+
+.btn-fb:active {
+ background-position: 34px -315px;
+}
+
+.btn-inst:active {
+ background-position: 31px -396px;
+}
 .navigation-page {
   width: 760px;
   margin-bottom: 60px;
@@ -1158,4 +1161,199 @@ a.page-next {
   border-radius: 3px;
   padding: 13px 18px;
   line-height: 18px;
+}
+
+.modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -290px;
+  width: 760px;
+  min-height: 440px;
+  padding: 70px 100px;
+  z-index: 300;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  }
+
+.modal-form-close {
+  position: absolute;
+  top: 77px;
+  right: 89px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-form-close::before,
+.modal-form-close::after {
+  content: "";
+  top: 9px;
+  right: -1px;
+  position: absolute;
+  width: 25px;
+  height: 5px; 
+  background-color: #fecccd;
+  border-radius: 1px;
+}
+
+.modal-form-close:hover::before,
+.modal-form-close:hover::after {
+  background-color: #fb565a;
+}
+
+.modal-form-close:active::before,
+.modal-form-close:active::after {
+  background-color: #ffeeee;
+}
+
+
+.modal-form-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-form-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-form h4 {
+  margin-top: -3px;
+  margin-bottom: 41px;
+  margin-left: -2px;
+}
+
+.modal-form input {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 34px;
+  padding: 11px 13px;
+  width: 330px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: #000000;
+}
+
+.modal-form input::nth-child(2n) {
+  margin-right: 0;
+}
+
+.modal-form label {
+  display: block;
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+}
+
+input::-webkit-input-placeholder {
+  color: #b4b9bb;
+}
+input::-moz-placeholder {
+  color: #b4b9bb;
+}
+
+input:-ms-input-placeholder {
+  color: #b4b9bb;
+}
+
+textarea::-webkit-input-placeholder { 
+  color: #b4b9bb; 
+}
+
+textarea:-moz-placeholder { 
+  color: #b4b9bb;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder {
+  color: #000000;
+}
+
+.textarea-message {
+  clear: both;
+}
+
+.modal-form textarea {
+  margin-bottom: 40px;
+  padding: 12px 13px;
+  width: 730px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  outline: none;
+  max-height: 116px;
+  line-height: 18px;
+  overflow: auto;
+}
+
+.modal-form button {
+  margin-bottom: 14px;
+}
+
+.input-name,
+.input-email {
+  display: block;
+}
+
+.input-name:hover,
+.input-email:hover,
+.textarea-message:hover {
+  color: #a3a3a3;
+}
+
+.input-name {
+  float: left;
+  width: 360px;
+}
+
+.input-email {
+  float: right;
+  width: 360px;
+}
+
+.btn-send {
+  display: inline-block;
+  width: 260px;
+  margin-right: 11px;
+  padding: 16px 6px;
+  font-size: 16px;
+  line-height: 18px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

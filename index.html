@@ -150,6 +150,26 @@
         </section>
       </div>
     </footer>
+    <div class="modal-form">
+      <button class="modal-form-close" type="button" title="Закрыть">Закрыть</button>
+      <h4>Напишите нам</h4>
+      <form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <div class="input-name">
+          <label for="fullname">Ваше имя:</label>
+          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+        </div>
+        <div class="input-email">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+        </div>
+        <div class="textarea-message">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" id="message" placeholder="В свободной форме" rows="5" required></textarea>
+        </div>
+        <button class="btn btn-send" type="submit" method="get">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
     <script>
       var map;
       function initMap() {
