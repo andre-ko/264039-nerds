@@ -5,8 +5,8 @@
     <title>Студия «Нёрдс»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+    <link href="css/style.min.css" rel="stylesheet">
+    </head>
   <body>
 
 <!-- Header | L'en-tête -->
@@ -37,10 +37,9 @@
     </header>
 
 <!-- Main content block | Le bloc principal de la teneur -->
-		<!-- Left filter block | Le bloc gauche des filtres -->
-    <section class="catalog-main container">
+    <main class="catalog-main container">
       <aside class="catalog-filter">
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
         <div class="filters">
         <h3>Стоимость:</h3>
           <div class="range-controls">
@@ -100,7 +99,7 @@
                Корзина
             </label>
           </fieldset>
-          <button class="btn btn-show" type="button" method="post">Показать</button>
+          <button class="btn btn-show" type="button">Показать</button>
           </div>
         </form>
       </aside>
@@ -184,7 +183,7 @@
           <a class="btn page-next" href="#">Следующая</a>
         </section>
       </section>
-    </section>
+    </main>
 
   <div class="container clearfix">
     <article class="contact-tab">
@@ -196,7 +195,7 @@
       <p class="phone">
         тел. +7 (812) 275-75-75
       </p>
-      <a class="btn btn-contact" href="#">Напишите нам</a>
+      <a class="btn btn-contact" href="contact.html">Напишите нам</a>
       </article>
     </div>
     
@@ -217,45 +216,27 @@
         </section>
       </div>
     </footer>
+    <div class="modal-overlay"></div>
         <div class="modal-form">
       <button class="modal-form-close" type="button" title="Закрыть">Закрыть</button>
       <h4>Напишите нам</h4>
       <form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="input-name">
           <label for="fullname">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="input-email">
           <label for="email">Ваш e-mail:</label>
-          <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа">
         </div>
         <div class="textarea-message">
           <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" placeholder="В свободной форме" rows="5" required></textarea>
+          <textarea name="message" id="message" placeholder="В свободной форме" rows="5"></textarea>
         </div>
-        <button class="btn btn-send" type="submit" method="get">Отправить</button>
-      </form>
+        <button class="btn btn-send" type="submit">Отправить</button>
+      </form>    
     </div>
-    <div class="modal-overlay"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.938976, lng: 30.323422},
-          zoom: 17,
-          disableDefaultUI: true,
-          scrollwheel:  false,
-          zoomControl: true
-        });
-        var image = 'img/map-marker.png';
-        var studioMarker = new google.maps.Marker({
-          position: {lat: 59.938645, lng: 30.323087},
-          map: map,
-          icon: image
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP-LdTgjqwqP5aauCZMVSgdZWfIWUosBw&callback=initMap"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP-LdTgjqwqP5aauCZMVSgdZWfIWUosBw&callback=initMap" async defer></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
