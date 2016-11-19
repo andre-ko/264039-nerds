@@ -1,4 +1,4 @@
-  html {
+html {
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,11 @@ body {
   background-color: #ffffff;
 }
 
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
   margin: 0;
 }
 
@@ -32,7 +36,8 @@ h2 {
   text-transform: uppercase;
 }
 
-h3, div.filter-sort-by {
+h3,
+div.filter-sort-by {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -86,9 +91,9 @@ h4 {
   cursor: pointer;
 }
 
-#toggle-1:checked ~ .slides-controls label[for="toggle-1"],
-#toggle-2:checked ~ .slides-controls label[for="toggle-2"],
-#toggle-3:checked ~ .slides-controls label[for="toggle-3"] {
+.toggle-1:checked ~ .slides-controls label[for="toggle-1"],
+.toggle-2:checked ~ .slides-controls label[for="toggle-2"],
+.toggle-3:checked ~ .slides-controls label[for="toggle-3"] {
   width: 18px;
   height: 18px;
   background-color: #ffffff;
@@ -689,7 +694,7 @@ h1.inner-header {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("../img/checkbox.png") no-repeat;
+  background: url("../img/nerds-iconset.png") no-repeat 0 -490px;
   cursor: pointer;
   opacity: 0.4;
 }
@@ -724,7 +729,7 @@ h1.inner-header {
 }
 
 .filter-features input[type="checkbox"]:checked + label::before {
-  background: url("../img/checkbox2.png") no-repeat;
+  background: url("../img/nerds-iconset.png") no-repeat 0 -557px;
 }
 
 .filter-features input[type="checkbox"] + label:hover::before,
@@ -777,8 +782,9 @@ h1.inner-header {
   transition: 0.25s;
 }
 
-.catalog-item .dot {
+.catalog-item::before {
   position: absolute;
+  content: "";
   top: 13px;
   left: 16px;
   width: 14px;
@@ -1097,11 +1103,13 @@ input:focus {
 .btn-inst:active {
  background-position: 31px -396px;
 }
+
 .navigation-page {
   width: 760px;
   margin-bottom: 59px;
   padding-top: 25px;
 }
+
 .navigation-page a,
 .btn-show {
   display: inline-block;
