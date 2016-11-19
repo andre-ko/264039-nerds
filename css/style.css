@@ -1,4 +1,4 @@
-html {
+  html {
   margin: 0;
   padding: 0;
 }
@@ -15,10 +15,6 @@ body {
 
 h1, h2, h3, p, a {
   margin: 0;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
 }
 
 h1 {
@@ -558,22 +554,27 @@ ul.about-list {
   margin-bottom: 80px;
   min-height: 180px;
   max-width: 1160px;
+  font-size: 0;
+
 }
 
 .our-clients a {
   display: inline-block;
   position: relative;
-  height: 90px;
-  margin: 45px 40px;
+  min-width: 281px;
+  height: 180px;
+  margin: 0;
   opacity: 0.2;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .our-clients a::after {
   display: inline-block;
   position: absolute;
   content: "";
-  top: 20px;
-  right: -45px;
+  top: 64px;
+  right: -2px;
   margin: 0;
   width: 2px;
   height: 52px;
@@ -597,10 +598,6 @@ ul.about-list {
 }
 .our-clients a:active {
   opacity: 0.1;
-}
-
-.our-clients a:nth-child(4n) {
-  margin-right: 32px;
 }
 
 h1.inner-header {
@@ -1392,26 +1389,6 @@ textarea {
 .modal-input-error::placeholder {
   color: #e74246;
   border-color: #e74246;
-}
-
-.modal-input-error::-webkit-input-placeholder {
-  color: #e74246;
-  border-color: #e74246;
-}
-
-.modal-input-error:-moz-placeholder { /* Firefox 18- */
-   color: #e74246;
-  border-color: #e74246; 
-}
-
-.modal-input-error::-moz-placeholder {  /* Firefox 19+ */
-  color: #e74246;
-  border-color: #e74246; 
-}
-
-.modal-input-error:-ms-input-placeholder {  
-  color: #e74246;
-  border-color: #e74246; 
 }
 
 img {
